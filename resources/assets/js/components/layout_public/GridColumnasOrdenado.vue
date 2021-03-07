@@ -14,7 +14,7 @@
                                 <center><span class="txt-negrita" style="font-size: 1em;">{{ imagen.producto }}</span></center>
                             </div>
                             <div class="m-t-10">
-                                <span class="" style="font-size: 0.9em;">{{ imagen.descripcion }}</span>
+                                <!-- <span class="" style="font-size: 0.9em;">{{ imagen.descripcion }}</span> -->
                             </div>
                             <div class="flex-item-end flex flex-content-end p-t-10 m-t-10" style="border-top: 1px solid #ccc;">
                                 <span v-if="imagen.precio>0" class="txt-negrita" style="font-size: 0.9em;">

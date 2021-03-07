@@ -67210,13 +67210,7 @@ var render = function() {
                             1
                           ),
                           _vm._v(" "),
-                          _c("div", { staticClass: "m-t-10" }, [
-                            _c(
-                              "span",
-                              { staticStyle: { "font-size": "0.9em" } },
-                              [_vm._v(_vm._s(imagen.descripcion))]
-                            )
-                          ]),
+                          _c("div", { staticClass: "m-t-10" }),
                           _vm._v(" "),
                           _c(
                             "div",
