@@ -67200,7 +67200,7 @@ var render = function() {
                                 _c(
                                   "span",
                                   {
-                                    staticClass: "txt-negrita",
+                                    staticClass: "txt-negrita uppercase",
                                     staticStyle: { "font-size": "1em" }
                                   },
                                   [_vm._v(_vm._s(imagen.producto))]
