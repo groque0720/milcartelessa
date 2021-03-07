@@ -29,7 +29,7 @@
                 <h1 class="text-3xl font-bold text-center">NUESTROS PRODUCTOS Y SERVICIOS</h1>
             </div>
             <div class="flex items-center justify-center">
-               <p class="text-gray-500 text-xl">Constructora Líder</p>
+               <p class="text-gray-500 text-xl">No somos solo una empresa publicitaria</p>
             </div>
             <div  class="grid grid-cols-2 md:grid-cols-3 gap-5 mt-10 flex">
                 <template>

@@ -68022,7 +68022,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "flex items-center justify-center" }, [
       _c("p", { staticClass: "text-gray-500 text-xl" }, [
-        _vm._v("Constructora Líder")
+        _vm._v("No somos solo una empresa publicitaria")
       ])
     ])
   },
