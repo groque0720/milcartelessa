@@ -14,7 +14,7 @@ let mix = require('laravel-mix');
 mix.js('resources/assets/js/app.js', 'public/js');
 mix.sass('resources/assets/sass/app.scss', 'public/css');
 
-mix.browserSync('http://venadovial.test/');
+mix.browserSync('http://milcartelessa.test/');
 
 if (mix.inProduction()) {
     mix.version();

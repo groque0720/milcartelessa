@@ -36,7 +36,7 @@
                     <div v-for="(album, f) in albumes_infinite" class="w-full bg-gray-100 p-2 border cursor-auto relative rounded shadow-lg"  @click.prevent="irProducto(album.codigo, '')" style="cursor: pointer;">
                         <div class="flex flex-col">
                             <div class="overflow-hidden" >
-                                <img class="object-cover w-full h-40 sm:h-52 md:h-64 lg:h-96" :src="'/storage/'+album.imagen_ppal" alt="">
+                                <img class="efecto object-cover w-full h-40 sm:h-52 md:h-64 lg:h-96" :src="'/storage/'+album.imagen_ppal" alt="">
                             </div>
                             <div class="flex justify-center items-center mt-3">
                                 <p class="uppercase text-center font-bold">{{ album.producto}}</p>
@@ -178,9 +178,22 @@
     }
 </script>
 <style scoped>
+
+
     img {
        cursor: zoom-in;
+        transition:all .3s ease-in-out;
     }
+
+    img:hover {
+        /*filter: grayscale(80%);
+        filter: sepia(60%);*/
+        filter: saturate(180%);
+        transform:scale(1.1);
+    }
+
+
+
     .tarjeta  {
         transition: all .2s;
         filter: brightness(100%);

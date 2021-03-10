@@ -26,7 +26,7 @@
         <div class="flex-1 hidden md:block">
             <div class="relative overflow-hidden">
                 <div class="parallax" style="height: 400px;">
-                        <img class="w-full object-cover h-screen bg-cover"
+                        <img class="w-full object-cover h-screen bg-cover transform  -translate-y-24"
                             :src="'/storage/'+negocio.url+'/portada.jpg'" alt="">
                 </div>
                 <div class="absolute top-0 left-0  w-3/5 lg:w-2/5 h-full p-10 py-10 bg-white bg-opacity-75">
@@ -34,14 +34,15 @@
                             <polygon class="text-white text-opacity-75" points="50,0 100,0 50,100 50,100" />
                         </svg>
                         <div class="w-full h-full flex flex-col items-center justify-between">
-                            <div class="flex items-center justify-center p">
-                                <span class="text-3xl text-center"><span class="text-green-600 uppercase text-3xl">{{ negocio.nombre }}</span><br> LLEVA SU EMPRESA A LO MÁS ALTO</span>
+                            <div class="flex flex-col items-center justify-center space-y-3">
+                                <span class="text-green-600 uppercase text-3xl">{{ negocio.nombre }}</span>
+                                <span class="text-3xl text-center">LLEVA SU EMPRESA A LO MÁS ALTO</span>
                             </div>
                             <div class="mt-5 text-center">
-                                <p>{{ negocio.descripcion }}</p>
+                                <p class="text-xl">{{ negocio.descripcion }}</p>
                             </div>
                             <div>
-                                <p>Somos la empresa que estabas buscando!</p>
+                                <p class="text-xl">Somos la empresa que estabas buscando!</p>
                             </div>
                             <div class="flex flex-col md:flex-row items-center justify-center z-10">
                                 <div class="m-2"><a :href="'/'+negocio.url+'/contacto'" class="bg-green-600 p-3 text-white px-5 border">CONTACTANOS</a></div>
@@ -86,7 +87,7 @@
             let parallax = document.querySelector('.parallax');
             function scrollParallax() {
                 let scrollTop = document.documentElement.scrollTop;
-                parallax.style.transform = 'translateY('+ scrollTop * -0.3 +'px)';
+                parallax.style.transform = 'translateY('+ scrollTop * -0.4 +'px)';
             }
             window.addEventListener('scroll', scrollParallax);
         },

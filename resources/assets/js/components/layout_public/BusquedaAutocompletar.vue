@@ -1,7 +1,14 @@
  <template>
  <div style="position:relative" class="ancho-sx-95 ancho-s-90 ancho-m-70 ancho-l-60 ancho-lg-50">
- 	<div class="flex flex-item-center flex-space-between mt-2 p-2 zona-buscador" :class="{ 'zona-buscador-items': items_filter.length }" style="background: #eee;">
+ 	<div class="flex flex-item-center flex-space-between mt-2 p-2 zona-buscador ring-green-600 ring-2" :class="{ 'zona-buscador-items': items_filter.length }" style="background: #eee; ">
  		<div class="ancho-100">
+<!--  			<form>
+  <input class="border border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent ...">
+  <button class="bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 ...">
+    Sign up
+  </button>
+</form> -->
+
 		   	<input type="search" :placeholder="'Buscar en '+negocio.nombre" class="p-2 form-input-buscador" style="background: #eee;"
 		  		v-model="query_"
 		  		@input="evt=>autoComplete(evt)"

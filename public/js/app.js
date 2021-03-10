@@ -65222,6 +65222,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -65349,7 +65356,7 @@ var render = function() {
         "div",
         {
           staticClass:
-            "flex flex-item-center flex-space-between mt-2 p-2 zona-buscador",
+            "flex flex-item-center flex-space-between mt-2 p-2 zona-buscador ring-green-600 ring-2",
           class: { "zona-buscador-items": _vm.items_filter.length },
           staticStyle: { background: "#eee" }
         },
@@ -66025,6 +66032,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: ['negocio'],
@@ -66035,7 +66043,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         var parallax = document.querySelector('.parallax');
         function scrollParallax() {
             var scrollTop = document.documentElement.scrollTop;
-            parallax.style.transform = 'translateY(' + scrollTop * -0.3 + 'px)';
+            parallax.style.transform = 'translateY(' + scrollTop * -0.4 + 'px)';
         }
         window.addEventListener('scroll', scrollParallax);
     },
@@ -66115,7 +66123,8 @@ var render = function() {
           { staticClass: "parallax", staticStyle: { height: "400px" } },
           [
             _c("img", {
-              staticClass: "w-full object-cover h-screen bg-cover",
+              staticClass:
+                "w-full object-cover h-screen bg-cover transform  -translate-y-24",
               attrs: {
                 src: "/storage/" + _vm.negocio.url + "/portada.jpg",
                 alt: ""
@@ -66160,22 +66169,27 @@ var render = function() {
               [
                 _c(
                   "div",
-                  { staticClass: "flex items-center justify-center p" },
+                  {
+                    staticClass:
+                      "flex flex-col items-center justify-center space-y-3"
+                  },
                   [
+                    _c(
+                      "span",
+                      { staticClass: "text-green-600 uppercase text-3xl" },
+                      [_vm._v(_vm._s(_vm.negocio.nombre))]
+                    ),
+                    _vm._v(" "),
                     _c("span", { staticClass: "text-3xl text-center" }, [
-                      _c(
-                        "span",
-                        { staticClass: "text-green-600 uppercase text-3xl" },
-                        [_vm._v(_vm._s(_vm.negocio.nombre))]
-                      ),
-                      _c("br"),
-                      _vm._v(" LLEVA SU EMPRESA A LO MÁS ALTO")
+                      _vm._v("LLEVA SU EMPRESA A LO MÁS ALTO")
                     ])
                   ]
                 ),
                 _vm._v(" "),
                 _c("div", { staticClass: "mt-5 text-center" }, [
-                  _c("p", [_vm._v(_vm._s(_vm.negocio.descripcion))])
+                  _c("p", { staticClass: "text-xl" }, [
+                    _vm._v(_vm._s(_vm.negocio.descripcion))
+                  ])
                 ]),
                 _vm._v(" "),
                 _vm._m(1),
@@ -66222,7 +66236,9 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", [
-      _c("p", [_vm._v("Somos la empresa que estabas buscando!")])
+      _c("p", { staticClass: "text-xl" }, [
+        _vm._v("Somos la empresa que estabas buscando!")
+      ])
     ])
   }
 ]
@@ -67362,7 +67378,7 @@ if(false) {
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(13);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "\nimg[data-v-1d6c42d5] {\n       cursor: -webkit-zoom-in;\n       cursor: zoom-in;\n}\n.tarjeta[data-v-1d6c42d5]  {\n        -webkit-transition: all .2s;\n        transition: all .2s;\n        -webkit-filter: brightness(100%);\n                filter: brightness(100%);\n}\n.tarjeta[data-v-1d6c42d5]:hover {\n        -webkit-transform: scale(1.01);\n                transform: scale(1.01);\n        -webkit-filter: brightness(90%);\n                filter: brightness(90%);\n}\n.tarjeta:hover .imagen-titulo[data-v-1d6c42d5] {\n        display: block !important;\n}\n.tarjeta:hover .imagen-acciones[data-v-1d6c42d5] {\n        display: block !important;\n}\n.imagen-titulo[data-v-1d6c42d5] {\n        position: absolute;\n        top: 0;\n        left: 0;\n/*        height: 40px;\n        background: red;\n        background: linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255,1));*/\n        padding: 5px;\n}\n.imagen-acciones[data-v-1d6c42d5] {\n        position: absolute;\n        bottom: 0;\n        left: 0;\n}\n.scrollbar[data-v-1d6c42d5] {\n        height: 100%;\n        padding: 0px !important;\n}\n", ""]);
+exports.push([module.i, "\nimg[data-v-1d6c42d5] {\n       cursor: -webkit-zoom-in;\n       cursor: zoom-in;\n        -webkit-transition:all .3s ease-in-out;\n        transition:all .3s ease-in-out;\n}\nimg[data-v-1d6c42d5]:hover {\n        /*filter: grayscale(80%);\n        filter: sepia(60%);*/\n        -webkit-filter: saturate(180%);\n                filter: saturate(180%);\n        -webkit-transform:scale(1.1);\n                transform:scale(1.1);\n}\n.tarjeta[data-v-1d6c42d5]  {\n        -webkit-transition: all .2s;\n        transition: all .2s;\n        -webkit-filter: brightness(100%);\n                filter: brightness(100%);\n}\n.tarjeta[data-v-1d6c42d5]:hover {\n        -webkit-transform: scale(1.01);\n                transform: scale(1.01);\n        -webkit-filter: brightness(90%);\n                filter: brightness(90%);\n}\n.tarjeta:hover .imagen-titulo[data-v-1d6c42d5] {\n        display: block !important;\n}\n.tarjeta:hover .imagen-acciones[data-v-1d6c42d5] {\n        display: block !important;\n}\n.imagen-titulo[data-v-1d6c42d5] {\n        position: absolute;\n        top: 0;\n        left: 0;\n/*        height: 40px;\n        background: red;\n        background: linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255,1));*/\n        padding: 5px;\n}\n.imagen-acciones[data-v-1d6c42d5] {\n        position: absolute;\n        bottom: 0;\n        left: 0;\n}\n.scrollbar[data-v-1d6c42d5] {\n        height: 100%;\n        padding: 0px !important;\n}\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -67932,7 +67948,7 @@ var render = function() {
                     _c("div", { staticClass: "overflow-hidden" }, [
                       _c("img", {
                         staticClass:
-                          "object-cover w-full h-40 sm:h-52 md:h-64 lg:h-96",
+                          "efecto object-cover w-full h-40 sm:h-52 md:h-64 lg:h-96",
                         attrs: { src: "/storage/" + album.imagen_ppal, alt: "" }
                       })
                     ]),
