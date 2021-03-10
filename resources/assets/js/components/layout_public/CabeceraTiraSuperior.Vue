@@ -2,16 +2,16 @@
     <div>
         <!-- tira superior -->
         <div class="w-full cabecera-tira-superior">
-            <div class="bg-gray-50 p-2 text-sm">
+            <div class="bg-gray-500 p-2 text-sm">
                 <div class="md:w-4/5 m-auto flex justify-center items-center flex-wrap md:justify-end">
-                    <div class="flex items-center">
-                        <i class="far fa-envelope"></i>
-                        <span class="ml-2"><a :href="'mailto:'+negocio.email">{{ negocio.email }}</a></span>
+                    <div class="flex items-center ">
+                        <i class="far fa-envelope text-white"></i>
+                        <span class="ml-2 text-white"><a :href="'mailto:'+negocio.email">{{ negocio.email }}</a></span>
                     </div>
                     <div class="ml-2 flex items-center">
-                        <span class="mr-2">|</span>
-                        <i class="fab fa-whatsapp"></i>
-                        <span class="ml-2">3462-551685</span>
+                        <span class="mr-2 text-white">|</span>
+                        <i class="fab fa-whatsapp text-white"></i>
+                        <span class="ml-2 text-white">3462-551685</span>
                     </div>
                 </div>
             </div>

@@ -1,11 +1,11 @@
 <template>
-    <div class="w-full relative border shadow-sm">
+    <div class="w-full relative">
         <!-- cabecera -->
         <div class="w-full relative bg-gray-100 overflow-hidden container mx-auto " >
             <div class="cabecera-menu p-2  md:w-4/5 m-auto ">
                 <div class="cabecera-menu-contenido w-100 flex justify-between items-center">
                     <div>
-                       <a :href="'/'"><img class="logo-empresa w-32 max-h-20 object-cover transition-all " :src="'/storage/'+negocio.logo" :alt="negocio.nombre" alt=""></a>
+                       <a :href="'/'"><img class="logo-empresa w-36 max-h-20 object-cover transition-all " :src="'/storage/'+negocio.logo" :alt="negocio.nombre" alt=""></a>
                     </div>
                     <div class="flex items-center">
                         <div>

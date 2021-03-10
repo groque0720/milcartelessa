@@ -65356,7 +65356,7 @@ var render = function() {
         "div",
         {
           staticClass:
-            "flex flex-item-center flex-space-between mt-2 p-2 zona-buscador ring-green-600 ring-2",
+            "flex flex-item-center flex-space-between mt-2 p-2 zona-buscador ring-green-600 ring-1",
           class: { "zona-buscador-items": _vm.items_filter.length },
           staticStyle: { background: "#eee" }
         },
@@ -65653,7 +65653,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "w-full relative border shadow-sm" }, [
+  return _c("div", { staticClass: "w-full relative" }, [
     _c(
       "div",
       {
@@ -65673,7 +65673,7 @@ var render = function() {
                 _c("a", { attrs: { href: "/" } }, [
                   _c("img", {
                     staticClass:
-                      "logo-empresa w-32 max-h-20 object-cover transition-all ",
+                      "logo-empresa w-36 max-h-20 object-cover transition-all ",
                     attrs: {
                       src: "/storage/" + _vm.negocio.logo,
                       alt: _vm.negocio.nombre,
@@ -65854,7 +65854,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", [
     _c("div", { staticClass: "w-full cabecera-tira-superior" }, [
-      _c("div", { staticClass: "bg-gray-50 p-2 text-sm" }, [
+      _c("div", { staticClass: "bg-gray-500 p-2 text-sm" }, [
         _c(
           "div",
           {
@@ -65862,10 +65862,10 @@ var render = function() {
               "md:w-4/5 m-auto flex justify-center items-center flex-wrap md:justify-end"
           },
           [
-            _c("div", { staticClass: "flex items-center" }, [
-              _c("i", { staticClass: "far fa-envelope" }),
+            _c("div", { staticClass: "flex items-center " }, [
+              _c("i", { staticClass: "far fa-envelope text-white" }),
               _vm._v(" "),
-              _c("span", { staticClass: "ml-2" }, [
+              _c("span", { staticClass: "ml-2 text-white" }, [
                 _c("a", { attrs: { href: "mailto:" + _vm.negocio.email } }, [
                   _vm._v(_vm._s(_vm.negocio.email))
                 ])
@@ -65885,11 +65885,11 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "ml-2 flex items-center" }, [
-      _c("span", { staticClass: "mr-2" }, [_vm._v("|")]),
+      _c("span", { staticClass: "mr-2 text-white" }, [_vm._v("|")]),
       _vm._v(" "),
-      _c("i", { staticClass: "fab fa-whatsapp" }),
+      _c("i", { staticClass: "fab fa-whatsapp text-white" }),
       _vm._v(" "),
-      _c("span", { staticClass: "ml-2" }, [_vm._v("3462-551685")])
+      _c("span", { staticClass: "ml-2 text-white" }, [_vm._v("3462-551685")])
     ])
   }
 ]
@@ -66063,9 +66063,9 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "shadow-sm" }, [
+  return _c("div", { staticClass: "shadow-sm " }, [
     _c("div", { staticClass: "flex-1 md:hidden px-5" }, [
-      _c("div", { staticClass: "border border-green-100 h-0.5 w-full" }),
+      _c("div", { staticClass: "h-0.5 w-full" }),
       _vm._v(" "),
       _c("div", { staticClass: "flex items-center justify-center mt-5" }, [
         _c("span", { staticClass: "text-3xl text-center" }, [
@@ -67121,7 +67121,7 @@ var render = function() {
           return _c(
             "div",
             {
-              staticClass: "flex tarjeta-grid-columnas ",
+              staticClass: "flex tarjeta-grid-columnas",
               style: { width: _vm.ancho_columna + "%" },
               on: {
                 click: function($event) {
@@ -67934,7 +67934,7 @@ var render = function() {
                 "div",
                 {
                   staticClass:
-                    "w-full bg-gray-100 p-2 border cursor-auto relative rounded shadow-lg",
+                    "w-full bg-gray-100 p-2 cursor-auto relative border rounded shadow-xl ring-1 ring-green-300",
                   staticStyle: { cursor: "pointer" },
                   on: {
                     click: function($event) {

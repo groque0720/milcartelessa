@@ -1,9 +1,9 @@
 <template>
-    <div class="shadow-sm">
+    <div class="shadow-sm ">
         <!-- marquesina -->
             <!-- mobil -->
         <div class="flex-1 md:hidden px-5">
-            <div class="border border-green-100 h-0.5 w-full"></div>
+            <div class="h-0.5 w-full"></div>
             <div class="flex items-center justify-center mt-5">
                 <span class="text-3xl text-center"><span class="text-green-600 uppercase text-3xl">{{ negocio.nombre }}</span><br> LLEVA SU EMPRESA A LO MÁS ALTO</span>
             </div>

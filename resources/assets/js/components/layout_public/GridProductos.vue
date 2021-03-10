@@ -33,7 +33,7 @@
             </div>
             <div  class="grid grid-cols-2 md:grid-cols-3 gap-5 mt-10 flex">
                 <template>
-                    <div v-for="(album, f) in albumes_infinite" class="w-full bg-gray-100 p-2 border cursor-auto relative rounded shadow-lg"  @click.prevent="irProducto(album.codigo, '')" style="cursor: pointer;">
+                    <div v-for="(album, f) in albumes_infinite" class="w-full bg-gray-100 p-2 cursor-auto relative border rounded shadow-xl ring-1 ring-green-300"  @click.prevent="irProducto(album.codigo, '')" style="cursor: pointer;">
                         <div class="flex flex-col">
                             <div class="overflow-hidden" >
                                 <img class="efecto object-cover w-full h-40 sm:h-52 md:h-64 lg:h-96" :src="'/storage/'+album.imagen_ppal" alt="">
