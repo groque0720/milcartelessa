@@ -432,6 +432,12 @@ class NegocioController extends Controller
     }
 
 
+    public function lugares_disponibles(Request $request, $url_negocio){
+        $negocio = Negocio::where('url', $url_negocio)->first();
+        return view('public.lugares_disponibles',compact('negocio'));
+    }
+
+
     public function index()
     {
         $negocio = Negocio::where('user_id',Auth()->user()->id)->first();

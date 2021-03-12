@@ -66033,6 +66033,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: ['negocio'],
@@ -66090,14 +66092,39 @@ var render = function() {
             "flex flex-col md:flex-row items-center justify-center z-10 mt-5"
         },
         [
-          _c("div", { staticClass: "m-2" }, [
+          _c("div", { staticClass: "m-2 mb-5 md:mb-0" }, [
             _c(
               "a",
               {
-                staticClass: "bg-green-600 p-3 text-white px-5 border",
+                staticClass: "bg-green-600 p-3  px-5 border  flex items-center",
                 attrs: { href: "/" + _vm.negocio.url + "/contacto" }
               },
-              [_vm._v("CONTACTANOS")]
+              [
+                _c("i", { staticClass: "fas fa-envelope text-white mr-2" }),
+                _vm._v(" "),
+                _c("span", { staticClass: "text-white" }, [
+                  _vm._v("CONTACTANOS")
+                ])
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "m-2 mb-5 md:mb-0" }, [
+            _c(
+              "a",
+              {
+                staticClass: "bg-green-600 p-3  px-5 border  flex items-center",
+                attrs: { href: "/" + _vm.negocio.url + "/lugares_disponibles" }
+              },
+              [
+                _c("i", {
+                  staticClass: "fas fa-map-marker-alt text-white mr-2"
+                }),
+                _vm._v(" "),
+                _c("span", { staticClass: "text-white" }, [
+                  _vm._v("LUGARES DISPONIBLES")
+                ])
+              ]
             )
           ])
         ]
@@ -66201,15 +66228,45 @@ var render = function() {
                       "flex flex-col md:flex-row items-center justify-center z-10"
                   },
                   [
-                    _c("div", { staticClass: "m-2" }, [
+                    _c("div", { staticClass: "m-2 mb-5 md:mb-0" }, [
                       _c(
                         "a",
                         {
                           staticClass:
-                            "bg-green-600 p-3 text-white px-5 border",
+                            "bg-green-600 p-3  px-5 border  flex items-center",
                           attrs: { href: "/" + _vm.negocio.url + "/contacto" }
                         },
-                        [_vm._v("CONTACTANOS")]
+                        [
+                          _c("i", {
+                            staticClass: "fas fa-envelope text-white mr-2"
+                          }),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "text-white" }, [
+                            _vm._v("CONTACTANOS")
+                          ])
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "m-2 mb-5 md:mb-0" }, [
+                      _c(
+                        "a",
+                        {
+                          staticClass:
+                            "bg-green-600 p-3  px-5 border  flex items-center",
+                          attrs: {
+                            href: "/" + _vm.negocio.url + "/lugares_disponibles"
+                          }
+                        },
+                        [
+                          _c("i", {
+                            staticClass: "fas fa-map-marker-alt text-white mr-2"
+                          }),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "text-white" }, [
+                            _vm._v("LUGARES DISPONIBLES")
+                          ])
+                        ]
                       )
                     ])
                   ]

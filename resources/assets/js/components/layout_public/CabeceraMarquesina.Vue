@@ -14,7 +14,8 @@
                 <p>Somos la empresa que estabas buscando!</p>
             </div>
             <div class="flex flex-col md:flex-row items-center justify-center z-10 mt-5">
-                <div class="m-2"><a :href="'/'+negocio.url+'/contacto'" class="bg-green-600 p-3 text-white px-5 border">CONTACTANOS</a></div>
+                <div class="m-2 mb-5 md:mb-0"><a :href="'/'+negocio.url+'/contacto'" class="bg-green-600 p-3  px-5 border  flex items-center"><i class="fas fa-envelope text-white mr-2"></i> <span class="text-white">CONTACTANOS</span></a></div>
+                <div class="m-2 mb-5 md:mb-0"><a :href="'/'+negocio.url+'/lugares_disponibles'" class="bg-green-600 p-3  px-5 border  flex items-center"><i class="fas fa-map-marker-alt text-white mr-2"></i> <span class="text-white">LUGARES DISPONIBLES</span></a></div>
             </div>
             <div class="overflow-hidden mt-5" >
                 <img class="w-full object-cover" style="height: 250px;"
@@ -45,7 +46,8 @@
                                 <p class="text-xl">Somos la empresa que estabas buscando!</p>
                             </div>
                             <div class="flex flex-col md:flex-row items-center justify-center z-10">
-                                <div class="m-2"><a :href="'/'+negocio.url+'/contacto'" class="bg-green-600 p-3 text-white px-5 border">CONTACTANOS</a></div>
+                                <div class="m-2 mb-5 md:mb-0"><a :href="'/'+negocio.url+'/contacto'" class="bg-green-600 p-3  px-5 border  flex items-center"><i class="fas fa-envelope text-white mr-2"></i> <span class="text-white">CONTACTANOS</span></a></div>
+                <div class="m-2 mb-5 md:mb-0"><a :href="'/'+negocio.url+'/lugares_disponibles'" class="bg-green-600 p-3  px-5 border  flex items-center"><i class="fas fa-map-marker-alt text-white mr-2"></i> <span class="text-white">LUGARES DISPONIBLES</span></a></div>
                             </div>
                         </div>
                 </div>

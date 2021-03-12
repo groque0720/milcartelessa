@@ -201,6 +201,7 @@ Route::get('/{url_negocio}/productos/categorias/filtro/{categoria?}','Negocio\Ne
 Route::get('/{url_negocio}/productos/albumes_mismas_categorias/','Negocio\NegocioController@mostrar_albumes_mismas_categorias');
 
 Route::get('/{url_negocio}/productos_por_posicion', 'Negocio\NegocioController@productos_por_posicion');
+Route::get('/{url_negocio}/lugares_disponibles', 'Negocio\NegocioController@lugares_disponibles')->name('lugares_disponibles');
 
 Route::get('/{url_negocio}/contacto', 'Negocio\NegocioController@contacto')->name('contacto');
 
