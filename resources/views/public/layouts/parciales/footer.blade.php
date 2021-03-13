@@ -35,7 +35,7 @@
         </div>
         <div class="">
             <a href="{{ route('lugares_disponibles', $negocio->url) }}" class="flex items-center justify-center">
-                <img class="w-2/4 md:w-3/4" src="https://milcartelessa.com/wp-content/uploads/2017/12/Maps.png" alt="">
+                <img class="w-2/4 md:w-3/4" src="/images/Maps.png" alt="">
             </a>
         </div>
     </div>
