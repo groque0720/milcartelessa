@@ -89,7 +89,7 @@
 
             let animado = document.querySelectorAll('.animado');
             function mostrarScroll(){
-                let scrollTop = document.documentElement.scrollTop+450;
+                let scrollTop = document.documentElement.scrollTop+550;
                 for (var i = 0; i < animado.length; i++) {
                     let alturaAnimado = animado[i].offsetTop;
                     if (alturaAnimado < scrollTop){
