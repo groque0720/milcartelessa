@@ -335,3 +335,53 @@
     .productos-productos-seleccionar .lista-linea-activa {
         background: #ECECEC;
     }
+
+
+
+    .img_prod {
+       cursor: zoom-in;
+    }
+
+    .img_prod {
+       cursor: zoom-in;
+        transition:all .3s ease-in-out;
+    }
+
+    .img_prod:hover {
+        /*filter: grayscale(80%);
+        filter: sepia(60%);*/
+        filter: saturate(180%);
+        transform:scale(1.1);
+    }
+    .tarjeta  {
+        transition: all .2s;
+        filter: brightness(100%);
+    }
+    .tarjeta:hover {
+        transform: scale(1.01);
+        filter: brightness(90%);
+    }
+    .tarjeta:hover .imagen-titulo {
+        display: block !important;
+    }
+    .tarjeta:hover .imagen-acciones {
+        display: block !important;
+    }
+    .imagen-titulo {
+        position: absolute;
+        top: 0;
+        left: 0;
+/*        height: 40px;
+        background: red;
+        background: linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255,1));*/
+        padding: 5px;
+    }
+    .imagen-acciones {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .scrollbar {
+        height: 100%;
+        padding: 0px !important;
+    }

@@ -36,7 +36,7 @@
                     <div v-for="(album, f) in albumes_infinite" class="w-full bg-gray-100 p-2 cursor-auto relative border rounded shadow-xl ring-1 ring-green-300"  @click.prevent="irProducto(album.codigo, '')" style="cursor: pointer;">
                         <div class="flex flex-col">
                             <div class="overflow-hidden" >
-                                <img class="efecto object-cover w-full h-40 sm:h-52 md:h-64 lg:h-96" :src="'/storage/'+album.imagen_ppal" alt="">
+                                <img class="img_prod efecto object-cover w-full h-40 sm:h-52 md:h-64 lg:h-96" :src="'/storage/'+album.imagen_ppal" alt="">
                             </div>
                             <div class="flex justify-center items-center mt-3">
                                 <p class="uppercase text-center font-bold">{{ album.producto}}</p>
@@ -177,7 +177,7 @@
         }
     }
 </script>
-<style scoped>
+<!-- <style scoped>
 
 
     img {
@@ -226,4 +226,4 @@
         height: 100%;
         padding: 0px !important;
     }
-</style>
+</style> -->
