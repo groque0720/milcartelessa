@@ -33,6 +33,23 @@
             width: 6rem !important;
             margin: auto;
        }
+       .animado {
+            opacity: 0;
+            transition: all 1s;
+       }
+
+       .mostrarArriba {
+            animation: mostrarArriba 1s;
+       }
+
+       @keyframes mostrarArriba {
+           0% {
+            transform: translateY(200px);
+           }
+           100% {
+            transform: translateY(0);
+           }
+       }
     </style>
 
 </head>
@@ -68,25 +85,20 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     @yield('script')
     @yield('estilos')
-{{--     <script type="text/javascript" defer>
+    <script defer>
 
-        let parallax = document.querySelector('.parallax');
-        let cabecera_menu = document.querySelector('.cabecera-menu');
-        let cabecera_tira_superior = document.querySelector('.cabecera-tira-superior');
-        let altura = cabecera_menu.offsetTop + cabecera_tira_superior.offsetTop;
-
-        function scrollParallax() {
-            let scrollTop = document.documentElement.scrollTop;
-            parallax.style.transform = 'translateY('+ scrollTop * -0.3 +'px)';
-            if (window.pageYOffset > altura) {
-                cabecera_menu.classList.add('fixed');
-            }else{
-                cabecera_menu.classList.remove('fixed');
+            let animado = document.querySelectorAll('.animado');
+            function mostrarScroll(){
+                let scrollTop = document.documentElement.scrollTop+400;
+                for (var i = 0; i < animado.length; i++) {
+                    let alturaAnimado = animado[i].offsetTop;
+                    if (alturaAnimado < scrollTop){
+                        animado[i].style.opacity = 1;
+                        animado[i].classList.add("mostrarArriba");
+                    }
+                }
             }
-        }
-
-        window.addEventListener('scroll', scrollParallax);
-
-    </script> --}}
+            window.addEventListener('scroll', mostrarScroll);
+    </script>
 </body>
 </html>

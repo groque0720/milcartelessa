@@ -1,4 +1,4 @@
-<div class="mt-10 flex items-center justify-center">
+<div class="animado mt-10 flex items-center justify-center">
     <div class="w-3/4">
         <div class="w-4/12 border ring-1 border-green-600 mx-auto mb-10"></div>
         <div class="flex justify-center items-center relative">
@@ -20,7 +20,7 @@
 </div>
 
 {{--  CONTACTOS  --}}
-    <div class="grid grid-cols-1 md:grid-cols-3 mt-10">
+    <div class="animado grid grid-cols-1 md:grid-cols-3 mt-10">
 
         <div class="flex items-center justify-between py-7 p-3 bg-gray-500 text-white border">
             <div class="w-2/5 flex items-center justify-center">

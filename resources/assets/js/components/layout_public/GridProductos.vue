@@ -24,16 +24,16 @@
                 <span class="fz-18 txt-negrita txt-mayuscula">Otros</span>
             </div>
         </div>
-        <div class="w-full md:w-4/5 my-10 mx-auto px-5">
+        <div class="animado w-full md:w-4/5 my-10 mx-auto px-5">
             <div class="flex items-center justify-center">
                 <h1 class="text-3xl font-bold text-center">NUESTROS PRODUCTOS Y SERVICIOS</h1>
             </div>
             <div class="flex items-center justify-center">
                <p class="text-gray-500 text-xl">No somos solo una empresa publicitaria</p>
             </div>
-            <div  class="grid grid-cols-2 md:grid-cols-3 gap-5 mt-10 flex">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-5 mt-10 flex">
                 <template>
-                    <div v-for="(album, f) in albumes_infinite" class="w-full bg-gray-100 p-2 cursor-auto relative border rounded shadow-xl ring-1 ring-green-300"  @click.prevent="irProducto(album.codigo, '')" style="cursor: pointer;">
+                    <div v-for="(album, f) in albumes_infinite" class=" w-full bg-gray-100 p-2 cursor-auto relative border rounded shadow-xl ring-1 ring-green-300"  @click.prevent="irProducto(album.codigo, '')" style="cursor: pointer;">
                         <div class="flex flex-col">
                             <div class="overflow-hidden" >
                                 <img class="img_prod efecto object-cover w-full h-40 sm:h-52 md:h-64 lg:h-96" :src="'/storage/'+album.imagen_ppal" alt="">

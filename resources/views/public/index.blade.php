@@ -53,7 +53,8 @@
 @endsection
 
 @section('contenido')
+
 	<layout-public v-bind:negocio="{{ $negocio }}" v-bind:query="'{{ $query }}'"></layout-public>
-	{{-- <layout-grid-columnas v-bind:negocio="{{ $negocio }}"></layout-grid-columnas> --}}
+		{{-- <layout-grid-columnas v-bind:negocio="{{ $negocio }}"></layout-grid-columnas> --}}
 
 @endsection
