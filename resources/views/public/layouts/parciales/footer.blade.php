@@ -7,17 +7,38 @@
         </div>
         <div class="md:flex items-center justify-between mt-5">
             <div class="w-full md:w-2/5 flex flex-col items-center justify-center mb-5 md:mb-0">
-                <div class="text-6xl font-bold text-center text-green-600">+1500</div>
+                <div class="text-6xl font-bold text-center text-green-600">
+                    +<span class="contador-numeros text-6xl font-bold text-center text-green-600">1500</span></div>
                 <div class="text-center text-green-600">CLIENTES</div>
             </div>
             <div class="w-full md:w-2/5 flex flex-col items-center justify-center">
-                <div class="text-6xl font-bold text-center text-green-600">+4000</div>
+                <div class="text-6xl font-bold text-center text-green-600">
+                    +<span class="contador-numeros text-6xl font-bold text-center text-green-600">4000</span></div>
                 <div class="text-center text-green-600">PRODUCTOS ENTREGADOS</div>
             </div>
         </div>
         {{-- <div class="w-4/12 border ring-1 border-green-600 mx-auto mt-5"></div> --}}
     </div>
 </div>
+
+    {{-- LUGARES DISPONIBLES --}}
+    <div class="animado grid grid-cols-1 md:grid-cols-2 bg-gray-100 p-5 mt-10">
+        <div class="flex items-center justify-center p-5">
+            <div class="flex flex-col justify-center items-center">
+                <div class="text-center">
+                    <span class="text-2xl text-green-600">ESPACIOS DISPONIBLES PARA CARTELERÍA</span>
+                </div>
+                <div class="text-center md:mt-10">
+                    <span>Haz clic en el mapa y conocé todos los espacios disponibles que tenemos en el país.</span>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <a href="{{ route('lugares_disponibles', $negocio->url) }}" class="flex items-center justify-center">
+                <img class="w-2/4 md:w-3/4" src="https://milcartelessa.com/wp-content/uploads/2017/12/Maps.png" alt="">
+            </a>
+        </div>
+    </div>
 
 {{--  CONTACTOS  --}}
     <div class="animado grid grid-cols-1 md:grid-cols-3 mt-10">

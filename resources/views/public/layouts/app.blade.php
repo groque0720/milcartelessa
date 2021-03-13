@@ -88,8 +88,11 @@
     <script defer>
 
             let animado = document.querySelectorAll('.animado');
+            let contador = document.querySelectorAll('.contador-numeros');
+
             function mostrarScroll(){
                 let scrollTop = document.documentElement.scrollTop+550;
+
                 for (var i = 0; i < animado.length; i++) {
                     let alturaAnimado = animado[i].offsetTop;
                     if (alturaAnimado < scrollTop){
@@ -98,7 +101,10 @@
                     }
                 }
             }
+
             window.addEventListener('scroll', mostrarScroll);
+            mostrarScroll();
+
     </script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full relative">
+    <div class="animado w-full relative">
         <!-- cabecera -->
         <div class="w-full relative bg-gray-100 overflow-hidden container mx-auto " >
             <div class="cabecera-menu p-2  md:w-4/5 m-auto ">
