@@ -66465,9 +66465,7 @@ var render = function() {
                               href:
                                 "https://wa.me/" +
                                 _vm.negocio.celular +
-                                "?text=Visite%20https://" +
-                                _vm.negocio.url +
-                                ".vidriera.online%20y%20quisiera%20consultarte%20por:%20%20",
+                                "?text=Visite%20https://milcarteles.com.ar%20y%20quisiera%20consultarte%20por:%20%20",
                               target: "_blank",
                               title: red.red_social
                             }
@@ -69049,7 +69047,7 @@ var render = function() {
                                       href:
                                         "https://wa.me/" +
                                         _vm.whatsapp_number +
-                                        "?text=Quiero%20consultar%20de%20este%20producto%20%20https://vidriera.online/" +
+                                        "?text=Quiero%20consultar%20de%20este%20producto%20%20https://milcarteles.com.ar/" +
                                         _vm.negocio.url +
                                         "/producto/" +
                                         _vm.producto.codigo +
@@ -69544,10 +69542,11 @@ var render = function() {
                                           staticClass: "link ancho-100",
                                           staticStyle: { display: "block" },
                                           attrs: {
+                                            target: "_blank",
                                             href:
                                               "https://wa.me/" +
                                               _vm.whatsapp_number +
-                                              "?text=Quiero%20consultar%20de%20este%20producto%20%20https://vidriera.online/" +
+                                              "?text=Quiero%20consultar%20de%20este%20producto%20%20https://milcarteles.com.ar/" +
                                               _vm.negocio.url +
                                               "/producto/" +
                                               _vm.producto.codigo +

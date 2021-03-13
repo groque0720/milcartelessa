@@ -68,7 +68,4 @@
             <div class="mr-2">{{ $negocio->email }}</div><span class="hidden md:block mr-2">|</span>
             <div class="mr-2">{{ $negocio->telefono }}</div>
         </div>
-{{--         <div class="flex items-center justify-center mt-5 p-2 bg-gray-300">
-            <span class="text-white text-xs">Desarrollado por RGS</span>
-        </div> --}}
     </div>

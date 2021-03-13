@@ -96,7 +96,7 @@
 											<!-- consulta por whatsapp -->
 						<div class="flex flex-item-center flex-content-end ancho-100" v-if="mostrar_whatsapp">
 							<div class="flex" style="width: 130px;">
-								<a class="link ancho-100" style="display: block; " :href="'https://wa.me/'+whatsapp_number+'?text=Quiero%20consultar%20de%20este%20producto%20%20https://vidriera.online/'+negocio.url+'/producto/'+producto.codigo+'/'+producto.imagenes[imagen_ppal_index].id+'%20'">
+								<a class="link ancho-100" style="display: block; " :href="'https://wa.me/'+whatsapp_number+'?text=Quiero%20consultar%20de%20este%20producto%20%20https://milcarteles.com.ar/'+negocio.url+'/producto/'+producto.codigo+'/'+producto.imagenes[imagen_ppal_index].id+'%20'">
 									<div class="ancho-100 flex flex-item-center flex-space-around" style="background: #25D366; border-radius:30px;">
 										<div class="ancho-70 flex flex-item-center flex-content-center">
 											<span class="txt-blanco">Consultar</span>
@@ -189,7 +189,7 @@
 						<!-- consulta por whatsapp -->
 						<div class="flex flex-item-center flex-content-end ancho-100" v-if="mostrar_whatsapp">
 							<div class="flex" style="width: 130px;">
-								<a class="link ancho-100" style="display: block; " :href="'https://wa.me/'+whatsapp_number+'?text=Quiero%20consultar%20de%20este%20producto%20%20https://vidriera.online/'+negocio.url+'/producto/'+producto.codigo+'/'+producto.imagenes[imagen_ppal_index].id+'%20'">
+								<a class="link ancho-100" target="_blank" style="display: block; " :href="'https://wa.me/'+whatsapp_number+'?text=Quiero%20consultar%20de%20este%20producto%20%20https://milcarteles.com.ar/'+negocio.url+'/producto/'+producto.codigo+'/'+producto.imagenes[imagen_ppal_index].id+'%20'">
 									<div class="ancho-100 flex flex-item-center flex-space-around" style="background: #25D366; border-radius:30px;">
 										<div class="ancho-70 flex flex-item-center flex-content-center">
 											<span class="txt-blanco">Consultar</span>
