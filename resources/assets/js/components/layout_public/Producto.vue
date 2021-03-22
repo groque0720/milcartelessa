@@ -6,12 +6,11 @@
  		</div> -->
  		<layout-cabecera-tira-superior v-bind:negocio="negocio" :query="query"></layout-cabecera-tira-superior>
         <layout-cabecera v-bind:negocio="negocio" :query="query"></layout-cabecera>
-
  		<div v-if="mostrarDetalleProducto">
 	 		<div class="ancho-100 ancho-m-80 margen-auto no-display-lg no-display-l display-m" style="background: white;" >
 		 		<div style="border-radius: 15px; position: relative;" @click="openLightbox(imagen_ppal_index)">
 		 			<img v-if="$root.esImagen(imagen_ppal)" style="object-fit: cover;" class="ancho-100" :src="imagen_ppal" alt="" >
-					<LazyVideo v-if="$root.esVideo(imagen_ppal)" :src="'/storage/'+imagen_ppal"  style="object-fit: cover; max-height: 350px;" class="ancho-100" :attrs="{controls: false, playsinline: true, loop: '2', autoplay: true, muted: true}"/>
+					<LazyVideo v-if="$root.esVideo(imagen_ppal)" :src="imagen_ppal"  style="object-fit: cover; max-height: 350px;" class="ancho-100" :attrs="{controls: false, playsinline: true, loop: '2', autoplay: true, muted: true}"/>
 
 		 			<div class="flex flex-item-center flex-content-center"
 		 				 style="position: absolute; bottom: 15px; left: 15px; width: 35px; height: 35px; background: rgba(0,0,0,0.5); border-radius: 50%;" >
@@ -116,7 +115,7 @@
 					<div class="ancho-100 flex flex-item-center flex-content-center" @click="openLightbox(imagen_ppal_index)">
 						<div class="flex cursor-lupa"
 							 style="position: relative; max-width: 100%; max-height: 400px; border-radius: 15px; overflow: hidden;" >
-							<img v-if="$root.esImagen(imagen_ppal)" style="object-fit: cover;" class="ancho-100" v-lazy="imagen_ppal" alt="" >
+							 <img v-if="$root.esImagen(imagen_ppal)" style="object-fit: cover;" class="ancho-100" v-lazy="imagen_ppal" alt="" >
 							<video v-if="$root.esVideo(imagen_ppal)" style="object-fit: cover;" class="ancho-100 alto-100" autoplay loop muted>
 			                    <source :src="imagen_ppal" type="video/mp4">
 			                </video>
