@@ -403,6 +403,7 @@ class NegocioController extends Controller
                                         // ->where('tipo_id','=',1)
                                         ->where('guardar','=',1)
                                         ->with(['categorias'])
+                                        ->orderBy('productos.posicion')
                                         ->paginate($this->cant_reg);
             }
 
