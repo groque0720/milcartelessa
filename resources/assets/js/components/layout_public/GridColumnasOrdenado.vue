@@ -5,9 +5,9 @@
             <div v-for="imagen in imagenes_infinite" class="flex tarjeta-grid-columnas":style="{'width':ancho_columna+'%'}" @click.prevent="irProducto(imagen.producto_codigo, imagen.id)">
                 <div class="ancho-100" style="padding: 5px;" >
                     <div class="ancho-100 flex flex-direction-column" style="background: white; padding: 5px; border: 1px solid #ccc; border-radius: 5px; height: 100%;">
-                        <div class="ancho-100" style="height: 200px;">
+                        <div class="imagen flex ancho-100" style="height: 200px;">
                              <img v-if="$root.esImagen(imagen.imagen)" style="object-fit: cover; height: 100%;" class="ancho-100 lazyload cursor-lupa" v-lazy="'/storage/'+imagen.imagen"  alt="">
-                             <LazyVideo v-if="$root.esVideo(imagen.imagen)" :src="'/storage/'+imagen.imagen"  style="object-fit: cover; height: 100%;" class="ancho-100" :attrs="{controls: false, playsinline: true, loop: '2', autoplay: true, muted: true}"/>
+                             <LazyVideo v-if="$root.esVideo(imagen.imagen)" :src="'/storage/'+imagen.imagen"  style="object-fit: cover; min-height: 150px;" class="ancho-100" :attrs="{controls: false, playsinline: true, loop: '2', autoplay: true, muted: true}"/>
                         </div>
                         <div class="p-10 flex flex-space-between flex-direction-column" style="height: 100%">
                             <div class="flex flex-item-center flex-content-center">

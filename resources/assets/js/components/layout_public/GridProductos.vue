@@ -36,7 +36,9 @@
                     <div v-for="(album, f) in albumes_infinite" class=" w-full bg-gray-100 p-2 cursor-auto relative border rounded shadow-xl ring-1 ring-green-300"  @click.prevent="irProducto(album.codigo, '')" style="cursor: pointer;">
                         <div class="flex flex-col">
                             <div class="overflow-hidden" >
-                                <img class="img_prod efecto object-cover w-full h-40 sm:h-52 md:h-64 lg:h-96" :src="'/storage/'+album.imagen_ppal" alt="">
+                                <!-- <img class="img_prod efecto object-cover w-full h-40 sm:h-52 md:h-64 lg:h-96" :src="'/storage/'+album.imagen_ppal" alt=""> -->
+                                <img v-if="$root.esImagen(album.imagen_ppal)" style="object-fit: cover; max-height: 350px;;" class="img_prod efecto object-cover w-full h-40 sm:h-52 md:h-64 lg:h-96" v-lazy="'/storage/'+album.imagen_ppal"  alt="">
+                                <LazyVideo v-if="$root.esVideo(album.imagen_ppal)" :src="'/storage/'+album.imagen_ppal"  style="object-fit: cover; transform: translateX(-1px);" class="h-40 sm:h-52 md:h-64 lg:h-96" :attrs="{controls: false, playsinline: true, loop: '2', autoplay: true, muted: true}"/>
                             </div>
                             <div class="flex justify-center items-center mt-3">
                                 <p class="uppercase text-center font-bold">{{ album.producto}}</p>
