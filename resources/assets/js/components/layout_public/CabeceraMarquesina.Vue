@@ -18,17 +18,19 @@
                 <div class="m-2 mb-5 md:mb-0"><a :href="'/'+negocio.url+'/lugares_disponibles'" class="bg-green-600 p-3  px-5 border  flex items-center"><i class="fas fa-map-marker-alt text-white mr-2"></i> <span class="text-white">LUGARES DISPONIBLES</span></a></div>
             </div>
             <div class="overflow-hidden mt-5" >
-                <img class="w-full object-cover" style="height: 250px;"
-                    :src="'/storage/'+negocio.url+'/portada.jpg'" :alt="negocio.nombre" alt="">
+                <LazyVideo :src="'/images/milcarteles/videoportada.mp4'"  style="object-fit: cover; min-height: 150px;" class="ancho-100" :attrs="{controls: false, playsinline: true, loop: '2', autoplay: true, muted: true}"/>
+                <!-- <img class="w-full object-cover" style="height: 250px;"
+                    :src="'/images/'+negocio.url+'/portada.jpg'" :alt="negocio.nombre" alt=""> -->
                  <!-- src="https://milcartelessa.com/wp-content/uploads/2020/07/Portada-Uno-Venado-Vial-scaled-1900x611.jpg" alt=""> -->
             </div>
         </div>
             <!-- pantalla -->
         <div class="flex-1 hidden md:block">
             <div class="relative overflow-hidden">
-                <div class="parallax" style="height: 400px;">
-                        <img class="w-full object-cover h-screen bg-cover transform  -translate-y-24"
-                            :src="'/storage/'+negocio.url+'/portada.jpg'" alt="">
+                <div class="parallax" style="height: 450px;">
+                     <LazyVideo :src="'/images/milcarteles/videoportada.mp4'"  style="object-fit: cover; min-height: 450px; transform:translate(0px, -150px)" class="ancho-100" :attrs="{controls: false, playsinline: true, loop: '2', autoplay: true, muted: true}"/>
+<!--                         <img class="w-full object-cover h-screen bg-cover transform  -translate-y-24"
+                            :src="'/images/'+negocio.url+'/portada.jpg'" alt=""> -->
                 </div>
                 <div class="absolute top-0 left-0  w-3/5 lg:w-2/5 h-full p-10 py-10 bg-white bg-opacity-75">
                         <svg class="hidden right-0 lg:block absolute inset-y-0 h-full w-48 transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
@@ -79,6 +81,10 @@
 </template>
 
 <script>
+    import VueLazyload from 'vue-lazyload'
+    import VueLazyLoadVideo from 'vue-lazyload-video'
+    Vue.use(VueLazyload)
+    Vue.use(VueLazyLoadVideo)
     export default {
         props:['negocio'],
         data(){
