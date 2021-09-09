@@ -10,6 +10,14 @@
             <div class="mt-5 text-center">
                 <p>{{ negocio.descripcion }}</p>
             </div>
+            <div class="mt-5 text-center flex justify-center gap-3">
+                <div class="flex items-center justify-center">
+                    <a :href="'/'"><img class="logo-empresa w-36 max-h-20 object-cover transition-all " :src="'/storage/'+negocio.logo" :alt="negocio.nombre" alt=""></a>
+                </div>
+                <div class="flex items-center justify-center">
+                    <a :href="'https://venadovial.com.ar/'"><img class="logo-empresa w-36 max-h-20 object-cover transition-all " :src="'https://venadovial.com.ar/storage/venadovial/7ed057acab30bdd6c6d73c84ad4db796.png'" :alt="'venado_vial'" alt=""></a>
+                </div>
+            </div>
             <div class="mt-5 text-center">
                 <p>Somos la empresa que estabas buscando!</p>
             </div>
@@ -43,6 +51,14 @@
                             </div>
                             <div class="mt-5 text-center">
                                 <p class="text-xl">{{ negocio.descripcion }}</p>
+                            </div>
+                            <div class="mt-5 text-center flex justify-between gap-3">
+                                <div>
+                                    <a :href="'/'"><img class="logo-empresa w-36 max-h-20 object-cover transition-all " :src="'/storage/'+negocio.logo" :alt="negocio.nombre" alt=""></a>
+                                </div>
+                                <div>
+                                    <a :href="'https://venadovial.com.ar/'"><img class="logo-empresa w-36 max-h-20 object-cover transition-all " :src="'https://venadovial.com.ar/storage/venadovial/7ed057acab30bdd6c6d73c84ad4db796.png'" :alt="'venado_vial'" alt=""></a>
+                                </div>
                             </div>
                             <div>
                                 <p class="text-xl">Somos la empresa que estabas buscando!</p>
