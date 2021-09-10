@@ -25,15 +25,15 @@
             </div>
         </div>
         <div class="ancho-95 flex margen-auto">
-            <div v-for="(columnas, c) in nro_columnas" class="ancho-50" >
+            <div v-for="(columnas, c) in nro_columnas" class="ancho-50">
                 <template>
-                    <div v-for="(imagen, f) in imagenes_infinite"  v-if="boleanMostrar(c, f)" class="tarjeta-grid-columnas borde-radio-5 m-10 sombra-box cursor" style="position: relative; margin-bottom: 15px; background: white;" @click.prevent="irProducto(imagen.producto_codigo, imagen.id)">
-                        <div class="imagen flex ancho-100 ">
+                    <div v-for="(imagen, f) in imagenes_infinite"  v-if="boleanMostrar(c, f)" class="tarjeta-grid-columnas borde-radio-5 m-2 sombra-box cursor" style="position: relative; margin-bottom: 15px; background: white; border: 3px; border-color: gray; box-shadow: 2px 2px 3px gray;" @click.prevent="irProducto(imagen.producto_codigo, imagen.id)">
+                        <div class="imagen flex ancho-100 borde-radio-5" style="border-radius: 10px 10px 0 0; ">
                            <img v-if="$root.esImagen(imagen.imagen)" style="object-fit: cover; min-height: 150px;" class="ancho-100 lazyload cursor-lupa" v-lazy="'/storage/'+imagen.imagen"  alt="">
                             <LazyVideo v-if="$root.esVideo(imagen.imagen)" :src="'/storage/'+imagen.imagen"  style="object-fit: cover; min-height: 150px;" class="ancho-100" :attrs="{controls: false, playsinline: true, loop: '2', autoplay: true, muted: true}"/>
                         </div>
                         <div class="p-5 p-l-10 ancho-100" style="overflow: hidden;">
-                            <center><span class="txt-negrita" style="font-size: 1em;">{{ imagen.producto }}</span></center>
+                            <center><span class="txt-negrita txt-mayuscula" style="font-size: 1em;">{{ imagen.producto }}</span></center>
                         </div>
                     </div>
                     <template>

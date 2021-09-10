@@ -231,10 +231,10 @@
 <!-- 		<div v-if="mostrarFiltroCategorias">
 			<layout-productos-filtro-categorias v-bind:negocio="negocio"  v-bind:categoria="categoria_seleccion"></layout-productos-filtro-categorias>
 		</div> -->
-<!-- 		<div class="p-5" style="background: #eee;">
+		<div class="p-5" style="background: #eee;">
 			<layout-productos-mismas-categorias  v-bind:negocio="negocio" v-bind:producto="producto" v-bind:categorias="categorias_lista"></layout-productos-mismas-categorias>
 		</div>
-		<div class="m-t-20 p-5" style="background: #eee;">
+<!-- 		<div class="m-t-20 p-5" style="background: #eee;">
 			<layout-albumes-mismas-categorias  v-bind:negocio="negocio" v-bind:producto="producto" v-bind:categorias="categorias_lista"></layout-albumes-mismas-categorias>
 		</div> -->
 		<div class="m-t-15">
@@ -242,8 +242,8 @@
 				<span class="fz-18 txt-negrita txt-mayuscula">Otros Productos y Servicios</span>
 			</div>
 			<div class="container mx-auto w-full md:w-10/12">
-				<!-- <layout-grid-columnas v-bind:negocio="negocio" v-bind:query="''" :mostrarBusqueda="false"></layout-grid-columnas> -->
-				<layout-grid-columnas-ordenado v-bind:negocio="negocio" v-bind:query="''" :mostrarBusqueda="false"></layout-grid-columnas-ordenado>
+				<layout-grid-columnas v-bind:negocio="negocio" v-bind:query="''" :mostrarBusqueda="false"></layout-grid-columnas>
+				<!-- <layout-grid-columnas-ordenado v-bind:negocio="negocio" v-bind:query="''" :mostrarBusqueda="false"></layout-grid-columnas-ordenado> -->
 			</div>
 		</div>
 	</div>
