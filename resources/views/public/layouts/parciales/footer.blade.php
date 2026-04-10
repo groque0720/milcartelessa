@@ -73,7 +73,7 @@
             </div>
             <div class="w-3/5">
                 <div class="font-bold text-white">TELÉFONOS DE CONTACTO:</div>
-                <div class="text-white">03462 - 429639</div>
+                <div class="text-white">03462 - 579322</div>
                 <div class="text-white">03462 - 15551685</div>
                 <div class="text-white">011 - 1569732042</div>
             </div>
